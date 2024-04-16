@@ -1,0 +1,113 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="open_mentor_sequence" sap2010:ExpressionActivityEditor.ExpressionActivityEditor="C#" sap:VirtualizedContainerService.HintSize="630,631.333333333333" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:mca="clr-namespace:Microsoft.CSharp.Activities;assembly=System.Activities" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=mscorlib" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <TextExpression.NamespacesForImplementation>
+    <sco:Collection x:TypeArguments="x:String">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Text</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>UiPath.UIAutomationNext.Enums</x:String>
+      <x:String>UiPath.UIAutomationCore.Contracts</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities</x:String>
+      <x:String>System.Activities.DynamicUpdate</x:String>
+      <x:String>UiPath.Platform.ObjectLibrary</x:String>
+      <x:String>UiPath.Shared.Activities</x:String>
+      <x:String>UiPath.UIAutomationNext.Contracts</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+      <x:String>System.Linq.Expressions</x:String>
+    </sco:Collection>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <sco:Collection x:TypeArguments="AssemblyReference">
+      <AssemblyReference>Microsoft.CSharp</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization</AssemblyReference>
+      <AssemblyReference>System.ServiceModel</AssemblyReference>
+      <AssemblyReference>System.ServiceModel.Activities</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>PresentationCore</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Platform</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Mail.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities.Design</AssemblyReference>
+      <AssemblyReference>Microsoft.Bcl.AsyncInterfaces</AssemblyReference>
+      <AssemblyReference>System.ValueTuple</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Composition</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>UiPath.Excel</AssemblyReference>
+      <AssemblyReference>System.Runtime.WindowsRuntime</AssemblyReference>
+    </sco:Collection>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence DisplayName="open_mentor_sequence" sap:VirtualizedContainerService.HintSize="476,566.666666666667" sap2010:WorkflowViewState.IdRef="Sequence_1">
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Use Application: mentor.exe" sap:VirtualizedContainerService.HintSize="434,474.666666666667" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" ScopeGuid="f005f7ea-ae15-4853-a6db-eb54cb67ff8b" Version="V1">
+      <uix:NApplicationCard.Body>
+        <ActivityAction x:TypeArguments="x:Object">
+          <ActivityAction.Argument>
+            <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+          </ActivityAction.Argument>
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="376,180" sap2010:WorkflowViewState.IdRef="Sequence_2">
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <ui:MessageBox Caption="{x:Null}" ChosenButton="{x:Null}" AutoCloseAfter="00:00:00" DisplayName="Message Box" sap:VirtualizedContainerService.HintSize="334,85.3333333333333" sap2010:WorkflowViewState.IdRef="MessageBox_1">
+              <ui:MessageBox.Text>
+                <InArgument x:TypeArguments="x:Object">
+                  <mca:CSharpValue x:TypeArguments="x:Object" sap2010:WorkflowViewState.IdRef="CSharpValue`1_1">"opened mentor succesfuly"</mca:CSharpValue>
+                </InArgument>
+              </ui:MessageBox.Text>
+            </ui:MessageBox>
+          </Sequence>
+        </ActivityAction>
+      </uix:NApplicationCard.Body>
+      <uix:NApplicationCard.TargetApp>
+        <uix:TargetApp Area="567, 245, 786, 531" FilePath="D:\WinMENT\Mentor.exe" IconBase64="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" InformativeScreenshot="547662f8bb827e6690eb32abcfb10b23.png" Selector="&lt;wnd app='mentor.exe' cls='TSplashScreen' idx='*'/&gt;" />
+      </uix:NApplicationCard.TargetApp>
+    </uix:NApplicationCard>
+  </Sequence>
+</Activity>
