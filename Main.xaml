@@ -1,4 +1,4 @@
-<Activity mc:Ignorable="sap sap2010" x:Class="Main" sap2010:ExpressionActivityEditor.ExpressionActivityEditor="C#" sap:VirtualizedContainerService.HintSize="694,2924.66666666667" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:mca="clr-namespace:Microsoft.CSharp.Activities;assembly=System.Activities" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=mscorlib" xmlns:ue="clr-namespace:UiPath.Excel;assembly=UiPath.Excel.Activities" xmlns:ueab="clr-namespace:UiPath.Excel.Activities.Business;assembly=UiPath.Excel.Activities" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+<Activity mc:Ignorable="sap sap2010" x:Class="Main" sap2010:ExpressionActivityEditor.ExpressionActivityEditor="C#" sap:VirtualizedContainerService.HintSize="694,2934" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:mca="clr-namespace:Microsoft.CSharp.Activities;assembly=System.Activities" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=mscorlib" xmlns:ue="clr-namespace:UiPath.Excel;assembly=UiPath.Excel.Activities" xmlns:ueab="clr-namespace:UiPath.Excel.Activities.Business;assembly=UiPath.Excel.Activities" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
   <TextExpression.NamespacesForImplementation>
     <sco:Collection x:TypeArguments="x:String">
       <x:String>System.Activities</x:String>
@@ -85,7 +85,6 @@
       <AssemblyReference>WindowsBase</AssemblyReference>
       <AssemblyReference>UiPath.Studio.Constants</AssemblyReference>
       <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
-      <AssemblyReference>System.Runtime.WindowsRuntime</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
   <sap:WorkflowViewStateService.ViewState>
@@ -93,7 +92,7 @@
       <x:Boolean x:Key="ShouldExpandAll">True</x:Boolean>
     </scg:Dictionary>
   </sap:WorkflowViewStateService.ViewState>
-  <Sequence sap:VirtualizedContainerService.HintSize="704,2860" sap2010:WorkflowViewState.IdRef="Sequence_2">
+  <Sequence sap:VirtualizedContainerService.HintSize="704,2869.33333333333" sap2010:WorkflowViewState.IdRef="Sequence_2">
     <Sequence.Variables>
       <Variable x:TypeArguments="x:String" Name="path" />
     </Sequence.Variables>
@@ -103,14 +102,14 @@
         <x:Boolean x:Key="IsPinned">False</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <ui:MessageBox Caption="{x:Null}" ChosenButton="{x:Null}" AutoCloseAfter="00:00:00" DisplayName="Message Box" sap:VirtualizedContainerService.HintSize="334,86" sap2010:WorkflowViewState.IdRef="MessageBox_5">
+    <ui:MessageBox Caption="{x:Null}" ChosenButton="{x:Null}" AutoCloseAfter="00:00:00" DisplayName="Message Box" sap:VirtualizedContainerService.HintSize="642,86.6666666666667" sap2010:WorkflowViewState.IdRef="MessageBox_5">
       <ui:MessageBox.Text>
         <InArgument x:TypeArguments="x:Object">
           <mca:CSharpValue x:TypeArguments="x:Object" sap2010:WorkflowViewState.IdRef="CSharpValue`1_37" xml:space="preserve">"Selecteaza fisierul excel  "</mca:CSharpValue>
         </InArgument>
       </ui:MessageBox.Text>
     </ui:MessageBox>
-    <ui:SelectFile DisplayName="Select File" Filter="Excel|*.xlsx;*.xls;*.xlsm;*.xlsb" sap:VirtualizedContainerService.HintSize="642,140" sap2010:WorkflowViewState.IdRef="SelectFile_1">
+    <ui:SelectFile DisplayName="Select File" Filter="Excel|*.xlsx;*.xls;*.xlsm;*.xlsb" sap:VirtualizedContainerService.HintSize="642,141.333333333333" sap2010:WorkflowViewState.IdRef="SelectFile_1">
       <ui:SelectFile.SelectedFile>
         <OutArgument x:TypeArguments="x:String">
           <mca:CSharpReference x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpReference`1_1">path</mca:CSharpReference>
@@ -123,50 +122,50 @@
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
     </ui:SelectFile>
-    <ueab:ExcelProcessScopeX DisplayAlerts="{x:Null}" ExistingProcessAction="{x:Null}" FileConflictResolution="{x:Null}" LaunchMethod="{x:Null}" LaunchTimeout="{x:Null}" MacroSettings="{x:Null}" ProcessMode="{x:Null}" ShowExcelWindow="{x:Null}" DisplayName="Excel Process Scope" sap:VirtualizedContainerService.HintSize="642,2443.33333333333" sap2010:WorkflowViewState.IdRef="ExcelProcessScopeX_1">
+    <ueab:ExcelProcessScopeX DisplayAlerts="{x:Null}" ExistingProcessAction="{x:Null}" FileConflictResolution="{x:Null}" LaunchMethod="{x:Null}" LaunchTimeout="{x:Null}" MacroSettings="{x:Null}" ProcessMode="{x:Null}" ShowExcelWindow="{x:Null}" DisplayName="Excel Process Scope" sap:VirtualizedContainerService.HintSize="642,2450.66666666667" sap2010:WorkflowViewState.IdRef="ExcelProcessScopeX_1">
       <ueab:ExcelProcessScopeX.Body>
         <ActivityAction x:TypeArguments="ui:IExcelProcess">
           <ActivityAction.Argument>
             <DelegateInArgument x:TypeArguments="ui:IExcelProcess" Name="ExcelProcessScopeTag" />
           </ActivityAction.Argument>
-          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="608,2356" sap2010:WorkflowViewState.IdRef="Sequence_8">
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="608,2363.33333333333" sap2010:WorkflowViewState.IdRef="Sequence_8">
             <sap:WorkflowViewStateService.ViewState>
               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
               </scg:Dictionary>
             </sap:WorkflowViewStateService.ViewState>
-            <ueab:ExcelApplicationCard Password="{x:Null}" ReadFormatting="{x:Null}" CreateNewFile="False" DisplayName="Use Excel File" sap:VirtualizedContainerService.HintSize="546,2248.66666666667" sap2010:WorkflowViewState.IdRef="ExcelApplicationCard_1" TemplatePath="C:\\Users\\Iulia\\Downloads\\BUC (1).xls" UseTemplate="True">
+            <ueab:ExcelApplicationCard Password="{x:Null}" ReadFormatting="{x:Null}" CreateNewFile="False" DisplayName="Use Excel File" sap:VirtualizedContainerService.HintSize="546,2256" sap2010:WorkflowViewState.IdRef="ExcelApplicationCard_1" TemplatePath="C:\\Users\\Iulia\\Documents\\UiPath\\DanteAutomationBUC (1).xls" UseTemplate="True">
               <ueab:ExcelApplicationCard.Body>
                 <ActivityAction x:TypeArguments="ue:IWorkbookQuickHandle">
                   <ActivityAction.Argument>
                     <DelegateInArgument x:TypeArguments="ue:IWorkbookQuickHandle" Name="Excel" />
                   </ActivityAction.Argument>
-                  <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="512,1952" sap2010:WorkflowViewState.IdRef="Sequence_6">
+                  <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="512,1955.33333333333" sap2010:WorkflowViewState.IdRef="Sequence_6">
                     <sap:WorkflowViewStateService.ViewState>
                       <scg:Dictionary x:TypeArguments="x:String, x:Object">
                         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                       </scg:Dictionary>
                     </sap:WorkflowViewStateService.ViewState>
-                    <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Use Application: DANTE / Iulie 2023 - Utilizator: Master / Luna lucru : August 2023" sap:VirtualizedContainerService.HintSize="450,1413.33333333333" sap2010:WorkflowViewState.IdRef="NApplicationCard_3" ScopeGuid="99b1497a-0c52-4d85-a359-d0d3fc634870" Version="V1">
+                    <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Use Application: DANTE / Iulie 2023 - Utilizator: Master / Luna lucru : August 2023" sap:VirtualizedContainerService.HintSize="450,1416.66666666667" sap2010:WorkflowViewState.IdRef="NApplicationCard_3" ScopeGuid="99b1497a-0c52-4d85-a359-d0d3fc634870" Version="V1">
                       <uix:NApplicationCard.Body>
                         <ActivityAction x:TypeArguments="x:Object">
                           <ActivityAction.Argument>
                             <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
                           </ActivityAction.Argument>
-                          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="416,1119.33333333333" sap2010:WorkflowViewState.IdRef="Sequence_5">
+                          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="416,1120.66666666667" sap2010:WorkflowViewState.IdRef="Sequence_5">
                             <sap:WorkflowViewStateService.ViewState>
                               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                               </scg:Dictionary>
                             </sap:WorkflowViewStateService.ViewState>
-                            <ui:MessageBox Caption="{x:Null}" ChosenButton="{x:Null}" AutoCloseAfter="00:00:00" DisplayName="Message Box" sap:VirtualizedContainerService.HintSize="354,86" sap2010:WorkflowViewState.IdRef="MessageBox_3">
+                            <ui:MessageBox Caption="{x:Null}" ChosenButton="{x:Null}" AutoCloseAfter="00:00:00" DisplayName="Message Box" sap:VirtualizedContainerService.HintSize="354,86.6666666666667" sap2010:WorkflowViewState.IdRef="MessageBox_3">
                               <ui:MessageBox.Text>
                                 <InArgument x:TypeArguments="x:Object">
                                   <mca:CSharpValue x:TypeArguments="x:Object" sap2010:WorkflowViewState.IdRef="CSharpValue`1_3">"opened mentor app"</mca:CSharpValue>
                                 </InArgument>
                               </ui:MessageBox.Text>
                             </ui:MessageBox>
-                            <uix:NClick ClickType="Single" DisplayName="Click 'MENTOR'" sap:VirtualizedContainerService.HintSize="354,158.666666666667" sap2010:WorkflowViewState.IdRef="NClick_2" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="99b1497a-0c52-4d85-a359-d0d3fc634870" Version="V1">
+                            <uix:NClick ClickType="Single" DisplayName="Click 'MENTOR'" sap:VirtualizedContainerService.HintSize="354,159.333333333333" sap2010:WorkflowViewState.IdRef="NClick_2" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="99b1497a-0c52-4d85-a359-d0d3fc634870" Version="V1">
                               <uix:NClick.Target>
                                 <uix:TargetAnchorable DesignTimeRectangle="9, 89, 209, 41" ElementType="TabPage" FriendlyName="'MENTOR'" FullSelectorArgument="&lt;wnd cls='TWinMTabCtrl322' /&gt;&lt;ctrl name='MENTOR' role='page tab' /&gt;" FuzzySelectorArgument="&lt;wnd cls='TWinMTabCtrl322' /&gt;&lt;ctrl name='MENTOR' role='page tab' automationid='' check:text='MENTOR' /&gt;" Guid="9362d084-5b3f-40bc-ad4d-ee75a86ee135" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAANUAAAAtCAYAAAA5gS73AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAFiUAABYlAUlSJPAAAAPgSURBVHhe7dq/ahRRFAZwa8HGTrCNScDayjqFr+AjCGJjITZiZSEoCCGGbExiDGtWN8masBBlixhCWFREEInGv+hzHPPNcoezx3sndzJXLeYrfszMmbM7d8P5ktkhx040fgkRVTMxvS03phYzDBVRBacaX+XC7K5ca6zIzMxMhqEiqmCksSe35p/KwsJCjqEiquDM7Ee5/WhNlpaWcgwVUQWjDz7J3ea6tFqtHENFVMHYQajutbrSbrdzDBVRBWNz+zLZ3pROp5NjqIgqGD8I1dTqC9nY2MgxVEQVjM9/lulOT7rdbo6hIqqAoSJKjKEiSoyhIkqMoSJKjKEiSoyhIkqMoTLON7/IpWcfMtgv06PrIaF+XYfTcz/k4spedg5bHNt6iO53itZWtt+xa6YBhsrAsPT7/Qz2y/To+ubOK1neevMHDLCv/3r3vYw+/C4nZ39m584ufsv6cQ5bHKOOnjvP32W1lZevZXt38HpscYw6zqMP/Xg/7OP9dY+DdaI2sbw/FKyiz+Kua9dMAwyVEQpMTI+uY+AQBKtocHUY0IsBxjlscYy6CwmOEQQMOHpcMFDXg459vK8OD3ocHbaiwOvXuOvaNdMAQ2XoYZruvR26NcIWx6i7nlCodD1E94MOD7a+UGkpekJrLvosMdetM4bKiB10J3YQfey13F8ShDdmcFP0hNZc9FlirltnDJVhB10PjR4mJ3YQfey19G1YzOCm6AmtueizxFy3zhgqww46vjfgOwXq2OJYnw8NIm4Rcezo28jQtRzUYwY3RY9eA/Z9dftZ3M/B3h7TAENl6GGKgX7fazF0GGLH94Xe9uOvlHuqph9C+MIA/ypU9rPodeqHIjTAUBl6mGKEBhEDhwF2fMNn+/VTNTe4OOcLA6CGc1V69BpiPwuf/hVjqAw9TLi9wUBheHCMLY7/xtM/7PueLsL/DpWuQ8x164yhMuww+QYoNHChekjM+0BocGOG+7CemDXoOsRct84YKsMOk2+AQgMXqofEvA+EBjdmuA/riVmDrkPMdeuMoTLsMLlbMuy7J12hgdN1+8TM0f8vh2Pf+6BH33YeNTCgbynd7atej67HrA0YqmIMlYEBxKAA9sv06HpIqF/XAV/+8RAA50IPA2J6nKK1+V5bdW11xlAZ+M2O37yA/TI9uh4S6td10P/jh63vsXVMj1O0Nt9rq66tzhgqosQYKqLEGCqixBgqosQYKqLEGCqixBgqosQYKqLEGCqixLyhOn6zJ0RU3rnJHbnypC/N9c3hUI1cbQgRlXd5cnkoTHmo7j9eEyIqr7m67g+Vr0hER8dQESXVld/ZBHE1KAwBiAAAAABJRU5ErkJggg==" InformativeScreenshot="19fc99f4905f2902870483f27f21e730.png" ScopeSelectorArgument="&lt;wnd app='mentor.exe' cls='TMentorMain' title='DANTE / Iulie 2023 - Utilizator: Master / Luna lucru : August 20*' /&gt;" SearchSteps="Selector, FuzzySelector, Image" />
                               </uix:NClick.Target>
